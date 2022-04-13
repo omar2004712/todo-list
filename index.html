@@ -9,16 +9,16 @@
 </head>
 <body>
 <div id="root">
-    <ul>
-        <li class='todo'><input type="checkbox" onclick="done(this)"/>item1</li>
-        <li class='todo'><input type="checkbox" onclick="done(this)"/>item2</li> 
+    <h1 style="font-family:cursive;">Tasks</h1>
+    <ul id="tasks-el">
     </ul>
     <div id="input-task-el">
-        <input id="input-task-slot" type="text">
+        <input id="input-task-slot" type="text" placeholder="new task">
         <p id='error-msg'></p>
+        <button class="add-task-btn btn" type="button" onclick="inputTask.addTask()">ADD TASK</button>
     </div>
-    <br />
-    <button class="add-task-btn" type="button" onclick="inputTask.addTask()">ADD TASK</button>
+    <button class="btn" onclick="clearTasks(tasksEl)">RESET</button>
+</div>
 <script src="app.js"></script>
 </body>
 </html>

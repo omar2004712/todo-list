@@ -1,3 +1,7 @@
+body{
+    font-family: cursive;
+}
+
 .done{
     color: gray;
     opacity: 50%;
@@ -16,14 +20,16 @@ ul{
     padding-left: 0px;
 }
 
-.add-task-btn{
+.btn{
     font-family: cursive;
     font-weight: 1000;
     font-size: 0.8em;
+    margin-top: -50px;
+    width: 10em;
 }
 
 #input-task-el{
-    margin-bottom: 0.5em;
+    transition: all 2s;
 }
 
 #error-msg{
@@ -32,4 +38,8 @@ ul{
     font-family: cursive;
     opacity: 80%; 
     margin-top: -0.2em;
+}
+
+#input-task-slot.placeholder{
+    font-family: cursive;
 }
