@@ -42,3 +42,12 @@ const inputTask = {
     }
 
 }
+
+
+const input = document.querySelector('#input-task-slot');
+
+input.addEventListener('keypress', (e)=>{
+    if(e.key === 'Enter'){
+        inputTask.addTask();
+    }
+})
